@@ -1,0 +1,80 @@
+<mvc:View
+    controllerName="Tiles.tiles.controller.Flights"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+>
+    <Shell id="shell">
+        
+   <Page id="page1" title="{i18n>title2}" 
+                showNavButton="true"
+		        navButtonPress="onNavBack1">
+             <content >
+<Table id="Table" items="{FlightAvaible>/}" mode="MultiSelect">
+                     <headerToolbar>
+                     <OverflowToolbar>
+                     <Title text=" Information"/>
+                     <ToolbarSpacer/>
+                     <SearchField width = "20%" search="onSearch"/>
+                     <Button tooltip = "Sort" icon="sap-icon://sort"/>
+                     <Button tooltip = "Group" icon="sap-icon://group-2"/>
+                     </OverflowToolbar>
+                     </headerToolbar>
+
+
+                   <columns>
+                   <Column>
+                   <Text text="Code"></Text>
+                   </Column>
+                   <Column>
+                   <Text text="Name"></Text>
+                   </Column>
+                   <Column>
+                   <Text text="City"></Text>
+                   </Column>
+                   <Column>
+                   <Text text="State"></Text>
+                   </Column>
+                   <Column>
+                   <Text text="Country"></Text>
+                   </Column>
+                   <Column>
+                   <Text text="Woeid"></Text>
+                   </Column>
+                   <Column>
+                   <Text text="Type"></Text>
+                   </Column>
+                   <Column>
+                   <Text text="Runway Length"></Text>
+                   </Column>
+                   </columns>
+                   <items>
+                   <ColumnListItem  type="Navigation" press="onItemPress" >
+                   <cells>
+                   <Text text="{FlightAvaible>code}"></Text>
+                   <Text text="{FlightAvaible>name}"></Text>
+                    <Text text="{FlightAvaible>city}"></Text>
+                     <Text text="{FlightAvaible>state}"></Text>
+                      <Text text="{FlightAvaible>country}"></Text>
+                       <Text text="{FlightAvaible>woeid}"></Text>
+                        <Text text="{FlightAvaible>type}"></Text>
+                         <Text text="{FlightAvaible>runway_length}"></Text>
+                      </cells>
+                      </ColumnListItem>
+                      </items>
+                   </Table>
+                    </content >
+                    <footer>
+      <Toolbar>
+        <ToolbarSpacer/>
+          <Button text="Save Tickets" />
+           <Button text="Refund Tickets" />
+           
+          
+      </Toolbar>
+      </footer>
+                </Page>
+           
+    </Shell>
+</mvc:View>

@@ -1,0 +1,77 @@
+<mvc:View
+    controllerName="Tiles.tiles.controller.FlightDetail"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+  
+ xmlns:f="sap.ui.layout.form"
+>
+    <Shell id="shell">
+        <App id="app">
+            <pages>
+                <Page id="page2" title="{i18n>title}"
+                showNavButton="true"
+		        navButtonPress="onNavBack">
+
+
+<content>
+<f:SimpleForm id="SimpleFormChange354"
+editable="true"
+layout="ResponsiveGridLayout"
+title="{i18n>details-form-title}"
+labelSpanXL="3"
+labelSpanL="3"
+labelSpanM="3"
+labelSpanS="12"
+adjustLabelSpan="false"
+emptySpanXL="4"
+emptySpanL="4"
+emptySpanM="4"
+emptySpanS="0"
+columnsXL="1"
+columnsL="1"
+columnsM="1"
+singleContainerFullSize="false" >
+
+<f:content>
+<Label text="Code" />
+<Text text="{/code}" />
+
+<Label text="City" />
+<Text text="{/city}" />
+
+<Label text="State" />
+<Text text="{/state}" />
+
+<Label text="Country" />
+<Text text="{/country}" />
+
+<Label text="Woeid" />
+<Text text="{/woeid}" />
+
+<Label text="Type" />
+<Text text="{/type}" />
+
+<Label text="Runway Length" />
+<Text text="{/runway_length}" />
+
+<FlexBox
+                height="100px"
+                direction="column"
+                alignItems="Center"
+                justifyContent="Center">
+                <FlexBox
+                height="100px"
+                direction="row"
+                alignItems="Center"
+                justifyContent="Center">
+                </FlexBox>
+                </FlexBox>
+</f:content>
+</f:SimpleForm>
+</content>
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>

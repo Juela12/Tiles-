@@ -1,0 +1,65 @@
+<mvc:View
+    controllerName="Tiles.tiles.controller.Food"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+>
+                <Page id="page6" title="{i18n>title-food}"
+                 showNavButton="true"
+		        navButtonPress="onNavBack6">
+                     <content >
+ <Table id="Table1"  mode="MultiSelect"
+                items="{
+		               	path : 'Food>/',
+			                sorter : {
+				                path : 'groupCategory',
+				                        group : true
+		                                	}
+		                                   }">
+                     <headerToolbar>
+                     <OverflowToolbar>
+                     <Title text=" Food we serve in Phoenix Airline"/>
+                     <ToolbarSpacer/>
+                     <SearchField width="50%" search="onFilterInvoices" selectOnFocus="false"/>
+                     
+                     </OverflowToolbar>
+                     </headerToolbar>
+
+
+                   <columns>
+                   <Column>
+                   <Text text="Id"></Text>
+                   </Column>
+                   <Column>
+                   <Text text="Product"></Text>
+                   </Column>
+                   <Column>
+                   <Text text="Price"></Text>
+                   </Column>
+                   </columns>
+                   <items>
+                    <ColumnListItem  
+                      >
+                    <cells>
+                   <Text text="{Food>id}"></Text>
+                   <Text text="{Food>text}"></Text>
+                    <Text text="{Food>price}"></Text>
+                    
+                      </cells> 
+                      </ColumnListItem>
+                      </items>
+                   </Table> 
+                    </content >
+                    <footer>
+      <Toolbar>
+        <ToolbarSpacer/>
+           <Button text="Order" />
+           <Button text="Remove" />
+           
+         
+      </Toolbar>
+      </footer>
+                </Page>
+        
+</mvc:View>

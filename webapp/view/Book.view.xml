@@ -1,0 +1,20 @@
+<mvc:View
+    controllerName="Tiles.tiles.controller.Book"
+   xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:viz="sap.viz.ui5.controls" >
+
+                <Page id="page6" title="{i18n>title-book}"
+                 showNavButton="true"
+		        navButtonPress="onNavBack5">
+                     <content>
+                     <FlexBox justifyContent="Center" alignItems="Start">				
+		  <viz:VizFrame xmlns="sap.viz" id="idcolumn" >
+			         </viz:VizFrame>
+		</FlexBox>
+                     </content>
+                </Page>
+        
+</mvc:View>
+

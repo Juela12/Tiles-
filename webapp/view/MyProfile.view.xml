@@ -1,0 +1,33 @@
+<mvc:View
+    controllerName="Tiles.tiles.controller.MyProfile"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns:l="sap.ui.layout"
+    	
+    xmlns="sap.m">
+                <Page id="page9" title="{i18n>title-MyProfile}"
+                showNavButton="true"
+		        navButtonPress="onNavBack9">
+                     <content>
+                     	<List
+		
+		 >
+		<items>
+			<DisplayListItem
+				label="Telephone"
+				 />
+			<DisplayListItem
+				label="SMS"
+				/>
+			<DisplayListItem
+				label="Email"
+				 />
+			<DisplayListItem
+				label="Website"
+				 />
+		</items>
+	</List>
+                         </content>
+                </Page>
+        
+</mvc:View>

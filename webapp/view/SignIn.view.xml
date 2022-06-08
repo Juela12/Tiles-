@@ -1,0 +1,50 @@
+<mvc:View
+    controllerName="Tiles.tiles.controller.SignIn"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns:l="sap.ui.layout"
+    
+    xmlns="sap.m">
+                <Page id="page10" title="{i18n>title-SignIn}"
+                showNavButton="true"
+		        navButtonPress="onNavBack10">
+                     <content>
+                     <l:VerticalLayout class="sapUiContentPadding" width="100%">
+		<Label text="Name" labelFor="nameInput" />
+		<Input
+			id="nameInput"
+			class="sapUiSmallMarginBottom"
+			placeholder="Enter name"
+			valueStateText="Name must not be empty. Maximum 10 characters."
+			value="{
+				path : '/name',
+				type : 'sap.ui.model.type.String',
+				constraints : {
+					minLength: 1,
+					maxLength: 10
+				}
+			}"
+			change= ".onNameChange" />
+
+		<Label text="E-mail" labelFor="emailInput" />
+		<Input
+			id="emailInput"
+			class="sapUiSmallMarginBottom"
+			type="Email"
+			placeholder="Enter email"
+			valueStateText="E-mail must be a valid email address."
+			value="{
+				path: '/email',
+				type: '.customEMailType'
+			}" />
+            	<Label text="Password" labelFor="passwordInput" />
+		<Input
+			id="passwordInput"
+			type="Password"
+			placeholder="Enter password" />
+		<Button text="Submit" press=".onSubmit" />
+	</l:VerticalLayout>
+                     </content>
+                </Page>
+        
+</mvc:View>

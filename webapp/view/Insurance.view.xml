@@ -1,0 +1,64 @@
+<mvc:View
+    controllerName="Tiles.tiles.controller.Insurance"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns:l="sap.ui.layout"
+    xmlns="sap.m">
+                <Page id="page6" title="{i18n>title-Insurance}"
+                 showNavButton="true"
+		        navButtonPress="onNavBack7">
+                     <content>
+                    	<l:VerticalLayout class="sapUiContentPadding" width="100%">
+                        
+                        <Title level="H1" text="Why do you need travel insurance?" />
+                         <l:VerticalLayout >
+                        <FlexBox justifyContent="Center" alignItems="Start">	
+		<GenericTile
+				backgroundImage="https://www.aa.com/content/images/plan-travel/extras/trip-insurance-banner.jpg"
+				frameType="TwoByOne" press="pressOnTileTwo">
+				
+					</GenericTile>
+                    </FlexBox>
+                   
+        	</l:VerticalLayout >
+
+                        
+                         <Title level="H3" text="You have to cancel a trip last-minute." />
+                         <Text text="
+                                    Travel insurance can reimburse you for your prepaid, 
+                                    non-refundable trip costs — including vacation rentals, 
+                                    car rentals, hotels and flights — if you have to cancel for a covered reason."/>
+
+                                    <Title level="H3" text="Travel delays leave you stranded." />
+                                    <Text text="
+                                                Travel insurance can reimburse you for eligible meals,
+                                                 accommodation and transportation expenses during a covered delay."/>
+
+                                                 <Title level="H2" text="You get sick or hurt when you're far from home." />
+                                      <Text text="
+                                                  Travel insurance can reimburse you for care following a covered medical emergency 
+                                                  while traveling. We can even arrange and pay for a medical evacuation if needed."/>
+
+
+                                     <Title level="H3" text="Fender-benders are unavoidable." />
+                                         <Text text="
+                                         Renting a car means taking on a big financial risk; 
+                                         even a tiny scrape can cost you hundreds. 
+                                         Low-priced rental car insurance lets you drive worry-free. "/>
+
+                                         <Title level="H3" text="You need help in a hurry." />
+                                            <Text text="
+                                         Whether you're planning a week-long road trip or a weekend getaway, 
+                                         you never know what might happen. Travel insurance gives you access to our 24-Hour
+                                          Assistance hotline for expert, personalized support in a crisis."/>
+                                            
+
+                        </l:VerticalLayout>
+
+                       
+            			
+		 
+		  </content>
+                </Page>
+        
+</mvc:View>

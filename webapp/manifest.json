@@ -1,0 +1,272 @@
+{
+  "_version": "1.32.0",
+  "sap.app": {
+    "id": "Tiles.tiles",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "applicationVersion": {
+      "version": "0.0.1"
+    },
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "dataSources": {
+      "mainService": {
+        "uri": "/sap/opu/odata/",
+        "type": "OData",
+        "settings": {
+          "annotations": [],
+          "localUri": "localService/metadata.xml",
+          "odataVersion": "4.0"
+        }
+      }
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "flexEnabled": true,
+    "dependencies": {
+      "minUI5Version": "1.97.2",
+      "libs": {
+        "sap.ui.core": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "Tiles.tiles.i18n.i18n"
+        }
+      },
+      "": {
+        "dataSource": "mainService",
+        "preload": true,
+        "settings": {
+          "synchronizationMode": "None",
+          "operationMode": "Server",
+          "autoExpandSelect": true,
+          "earlyRequests": true,
+          "groupId": "$direct"
+        }
+      }
+    },
+    "resources": {
+      "css": [
+        {
+          "uri": "css/style.css"
+        }
+      ]
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "viewType": "XML",
+        "async": true,
+        "viewPath": "Tiles.tiles.view",
+        "controlAggregation": "pages",
+        "controlId": "app",
+        "clearControlAggregation": false
+      },
+      "routes": [
+        {
+          "name": "RouteApp",
+          "pattern": "",
+          "target": [
+            "TargetApp"
+          ]
+        },
+        {
+          "name": "Flights",
+          "pattern": "Flights",
+          "target": [
+            "TargetFlights"
+          ]
+        },
+        {
+          "name": "FlightDetail",
+          "pattern": "FlightDetail${item}",
+          "target": [
+            "TargetFlightDetail"
+          ]
+        },
+        {
+          "name": "Shop",
+          "pattern": "Shop",
+          "target": [
+            "TargetShop"
+          ]
+        },
+        {
+          "name": "Saved",
+          "pattern": "Saved",
+          "target": [
+            "TargetSaved"
+          ]
+        },
+        {
+          "name": "Wallet",
+          "pattern": "Wallet",
+          "target": [
+            "TargetWallet"
+          ]
+        },
+        {
+          "name": "Book",
+          "pattern": "Book",
+          "target": [
+            "TargetBook"
+          ]
+        },
+        {
+          "name": "Food",
+          "pattern": "Food",
+          "target": [
+            "TargetFood"
+          ]
+        },
+        {
+          "name": "Insurance",
+          "pattern": "Insurance",
+          "target": [
+            "TargetInsurance"
+          ]
+        },
+        {
+          "name": "Overview",
+          "pattern": "Overview",
+          "target": [
+            "TargetOverview"
+          ]
+        },
+        {
+          "name": "MyProfile",
+          "pattern": "MyProfile",
+          "target": [
+            "TargetMyProfile"
+          ]
+        },
+        {
+          "name": "SignIn",
+          "pattern": "SignIn",
+          "target": [
+            "TargetSignIn"
+          ]
+        }
+
+      ],
+      "targets": {
+        "TargetApp": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "App1",
+          "viewName": "App"
+        },
+        "TargetFlights": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "Flights",
+          "viewName": "Flights"
+        },
+        "TargetFlightDetail": {
+          "viewType": "XML",
+          "transition": "slide",
+          "viewId": "FlightDetail",
+          "viewName": "FlightDetail"
+      },
+      "TargetShop": {
+        "viewType": "XML",
+        "transition": "slide",
+        "viewId": "Shop",
+        "viewName": "Shop"
+
+    },
+    "TargetSaved": {
+      "viewType": "XML",
+      "transition": "slide",
+      "viewId": "Saved",
+      "viewName": "Saved"
+
+  
+},
+"TargetWallet": {
+  "viewType": "XML",
+  "transition": "slide",
+  "viewId": "Wallet",
+  "viewName": "Wallet"
+
+}
+,
+"TargetBook": {
+  "viewType": "XML",
+  "transition": "slide",
+  "viewId": "Book",
+  "viewName": "Book"
+
+},
+"TargetFood": {
+  "viewType": "XML",
+  "transition": "slide",
+  "viewId": "Food",
+  "viewName": "Food"
+
+},
+"TargetInsurance": {
+  "viewType": "XML",
+  "transition": "slide",
+  "viewId": "Insurance",
+  "viewName": "Insurance"
+
+},
+"TargetOverview": {
+  "viewType": "XML",
+  "transition": "slide",
+  "viewId": "Overview",
+  "viewName": "Overview"
+
+},
+"TargetMyProfile": {
+  "viewType": "XML",
+  "transition": "slide",
+  "viewId": "MyProfile",
+  "viewName": "MyProfile"
+
+},
+"TargetSignIn": {
+  "viewType": "XML",
+  "transition": "slide",
+  "viewId": "SignIn",
+  "viewName": "SignIn"
+
+}
+    
+    }
+    
+    },
+    "rootView": {
+      "viewName": "Tiles.tiles.view.App",
+      "type": "XML",
+      "async": true,
+      "id": "App"
+    }
+  }
+}

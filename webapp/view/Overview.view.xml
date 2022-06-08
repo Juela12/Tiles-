@@ -1,0 +1,45 @@
+<mvc:View
+    controllerName="Tiles.tiles.controller.Overview"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns:l="sap.ui.layout"
+    xmlns="sap.m">
+                <Page id="page8" title="{i18n>title-overview}"
+                showNavButton="true"
+		        navButtonPress="onNavBack8">
+                     <content>
+                     	<l:VerticalLayout width="100%"
+		class="sapUiContentPadding">
+		<Label text="Reviews" labelFor="RI_L"/>
+		<RatingIndicator id="RI_L" maxValue="5" class="sapUiSmallMarginBottom" value="4" iconSize="32px" tooltip="Rating Tooltip" />
+
+        <Panel
+                    backgroundDesign="Transparent"
+                    headerText="{i18n>ObjectCommentsTabTitle}">
+                    <content>
+                        <FeedInput post="onPost"/>
+                        <List
+                            id="idCommentsList"
+                            noDataText="{i18n>ObjectCommentNoData}"
+                            showSeparators="Inner"
+                            items="{
+                                path: 'productFeedback>/productComments',
+                                sorter: {
+                                    path: 'date',
+                                    descending: true
+                                }
+                            }">
+                            <FeedListItem
+                                info="{productFeedback>type}"
+                                text="{productFeedback>comment}"
+                                timestamp="{productFeedback>date}"/>
+                        </List>
+                    </content>
+                </Panel>
+        	</l:VerticalLayout>
+            
+
+                     </content>
+                </Page>
+        
+</mvc:View>

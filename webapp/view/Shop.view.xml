@@ -1,0 +1,137 @@
+<mvc:View
+    controllerName="Tiles.tiles.controller.Shop"
+    xmlns:mvc="sap.ui.core.mvc"
+     xmlns:l="sap.ui.layout"
+    displayBlock="true"
+    xmlns="sap.m">
+                <Page id="page6" title="{i18n>title-shop}"
+                 showNavButton="true"
+		        navButtonPress="onNavBack3">
+                     <content>
+                    	<l:VerticalLayout class="sapUiContentPadding" width="100%">
+
+                        <Title level="H1" text="Travelers are more informed than ever and are shopping across channels and sources to find the best offer.
+                         " />
+                         <Title level="H1" text="They also demand the instant personalized content they’ve come to expect from non-travel retailers." />
+                        
+                         <Text text="To market to these savvy shoppers,
+                          airlines are embracing intelligent retailing strategies and the technology solutions that enable
+                           them to maximize the revenue of their value-added products and services."/>
+                                    <Text text="Make Shopping More Accommodating
+                            Airline Shopping products drive opportunities to increase conversion through advanced search capabilities.
+                             Along the way, it enables airlines to upsell to higher brands, 
+                             ease point redemption and provide post-ticketing, self-service capabilities to exchange tickets."/>
+                                      <Text text="By leveraging various tools within Airline Shopping, 
+                                      airlines can support complex requests to return the lowest fares,
+                                       provide branded fares through interline partners and source algorithm-based targeted offers. 
+                                       They also have the power to drive qualified traffic from travel affiliates
+                                        and generate optimal itineraries that meet customers’ changing needs."/>
+                                         <Text text="Optimize the Entire Shopping Journey
+                                     Airlines are seeing increased value by integrating Shopping Cache into their website and driving 
+                                     qualified leads from meta-searchers.
+                                      In fact, response times improved by up to 30% using Airline Shopping. On top of that, 
+                                      this powerful tool is proven to increase conversion and direct channel revenue."/>
+                                            <Text text=""/>
+                                            </l:VerticalLayout>
+                                            
+   	<l:HorizontalLayout class="sapUiContentPadding" width="100%">
+
+                           <SlideTile class="sapUiTinyMarginBegin sapUiTinyMarginTop">
+			<GenericTile
+				backgroundImage="https://paxex.aero/wp-content/uploads/2021/11/singapore-airlines-737-max-8-Business-Class_Centered-1536x994.jpg.webp"
+				frameType="TwoByOne" press="pressOnTileOne">
+				<TileContent footer="August 21, 2021">
+					<NewsContent
+						contentText="All products in sale, 50%-70% OF"
+						subheader="Today, Sale" />
+				</TileContent>
+			</GenericTile>
+			<GenericTile
+				backgroundImage="https://i0.wp.com/bucketlistjourney.net/wp-content/uploads/2017/11/Copy-of-TEMPLATE-1.jpg"
+				frameType="TwoByOne" press="pressOnTileTwo">
+				<TileContent footer="August 21, 2021">
+					<NewsContent
+						contentText=" All products in sale, 50%-70% OF"
+						subheader="Today, Sale" />
+				</TileContent>
+			</GenericTile>
+            <GenericTile
+				backgroundImage="https://cdn.trendhunterstatic.com/thumbs/airline-services.jpeg"
+				frameType="TwoByOne" press="pressOnTileTwo">
+				<TileContent footer="August 21, 2021">
+					<NewsContent
+						contentText=" All products in sale, 50%-70% OF"
+						subheader="Today, Sale" />
+				</TileContent>
+			</GenericTile>
+		</SlideTile>
+
+          <SlideTile class="sapUiTinyMarginBegin sapUiTinyMarginTop">
+			<GenericTile
+				backgroundImage="https://bestlifeonline.com/wp-content/uploads/sites/3/2019/05/Flight-Attendant.jpg"
+				frameType="TwoByOne" press="pressOnTileOne">
+				<TileContent footer="August 21, 2021">
+					<NewsContent
+						contentText="Scin care products flight attendant use"
+						subheader="Today in sale" />
+				</TileContent>
+			</GenericTile>
+			<GenericTile
+				backgroundImage="https://media.united.com/images/Media%20Database/SDL/Travel/inflight/UA_UPkit_383x553.jpg"
+				frameType="TwoByOne" press="pressOnTileTwo">
+				<TileContent footer="August 21, 2021">
+					<NewsContent
+						contentText=" Scin care products flight attendant use"
+						subheader="Today in sale" />
+				</TileContent>
+			</GenericTile>
+            <GenericTile
+				backgroundImage="https://samchui.com/wp-content/uploads/2019/04/United-Airlines-Sunday-Riley-Amenity-Kits-01.jpeg"
+				frameType="TwoByOne" press="pressOnTileTwo">
+				<TileContent footer="August 21, 2021">
+					<NewsContent
+						contentText="Scin care products flight attendant use"
+						subheader="Today in sale" />
+				</TileContent>
+			</GenericTile>
+		</SlideTile>
+
+
+         <SlideTile class="sapUiTinyMarginBegin sapUiTinyMarginTop">
+			<GenericTile
+				backgroundImage="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/guest-with-mask-1616083974.jpg?resize=480:*"
+				frameType="TwoByOne" press="pressOnTileOne">
+				<TileContent footer="August 21, 2021">
+					<NewsContent
+						contentText="COVID-19"
+						subheader="Make sure to wear a mask" />
+				</TileContent>
+			</GenericTile>
+			<GenericTile
+				backgroundImage="https://ik.imgkit.net/3vlqs5axxjf/TW/ik-seo/uploadedImages/All_TW_Art/2021/0405/T0405DeltaAlcohol_c/What-new-normal%3F-Airlines-bring-back-some-pre-pand.jpg?tr=w-780%2Ch-440%2Cfo-auto"
+				frameType="TwoByOne" press="pressOnTileTwo">
+				<TileContent footer="August 21, 2021">
+					<NewsContent
+						contentText="COVID-19"
+						subheader="Make sure to wear a mask" />
+				</TileContent>
+			</GenericTile>
+            <GenericTile
+				backgroundImage="https://thumbor.forbes.com/thumbor/711x532/https://specials-images.forbesimg.com/imageserve/5fcbfeb5267a9b4244d6e6dc/Flight-attendant-Covid-face-mask/960x0.jpg?fit=scale"
+				frameType="TwoByOne" press="pressOnTileTwo">
+				<TileContent footer="August 21, 2021">
+					<NewsContent
+						contentText="COVID-19"
+						subheader="Make sure to wear a mask"/>
+				</TileContent>
+			</GenericTile>
+
+		</SlideTile>
+
+</l:HorizontalLayout >
+
+                        
+                     </content>
+                </Page>
+        
+</mvc:View>

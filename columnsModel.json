@@ -1,0 +1,17 @@
+{
+	"cols": [
+		{
+			"label": "Code",
+			"template": "Code"
+			
+		},
+		{
+			"label": " Name",
+			"template": "name"
+		},
+		{
+			"label": "City",
+			"template": "City"
+		}
+	]
+}

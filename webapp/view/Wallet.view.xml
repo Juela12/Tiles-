@@ -1,0 +1,21 @@
+<mvc:View
+    controllerName="Tiles.tiles.controller.Wallet"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns:viz="sap.viz.ui5.controls"
+    xmlns="sap.m">
+                <Page id="page6" title="{i18n>title-wallet}"
+                 showNavButton="true"
+		        navButtonPress="onNavBack4">
+                     <content>
+                     <FlexBox justifyContent="Center" alignItems="Start">				
+		  <items>
+			<viz:VizFrame xmlns="sap.viz" id="idpiechart" vizType="pie"/>			
+		 </items> 
+		</FlexBox>
+                     </content>
+                </Page>
+        
+</mvc:View>
+
+
